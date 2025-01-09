@@ -569,6 +569,20 @@ form a {
 }
 
 @media only screen and (max-width: 600px) {
+
+    .container {
+        max-width: 1000px;
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .categories .row-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        grid-gap: 20px;
+        margin-top: 50px;
+    }
     .row {
         text-align: center;
     }
@@ -579,6 +593,14 @@ form a {
         flex-basis: 100%;
     }
 
+    .col-4 {
+        flex-basis: 100%;
+        padding: 10px;
+        min-width: 150px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+    
+    }
     .single-product .row {
 
         text-align: left;
